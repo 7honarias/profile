@@ -1,0 +1,94 @@
+{
+	"info": {
+		"_postman_id": "bbdd8a6c-5a9e-40a3-bdb5-afc69af65c0d",
+		"name": "portfolio",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15672534"
+	},
+	"item": [
+		{
+			"name": "create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\": \"Jhon Edison Arias Esparza\",\r\n    \"githubUserName\": \"Slim\",\r\n    \"description\": \"En un entorno de desarrollo de software, los desafíos son inevitables. Uno de los aspectos más gratificantes de mi trabajo fue la resolución de problemas complejos. Trabajé en la identificación y solución de cuellos de botella de rendimiento, lo que resultó en mejoras significativas en la velocidad y la eficiencia de las aplicaciones.\",\r\n    \"occupation\": \"Desarrollador\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/portfolio/create",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"portfolio",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\": \"kiara\",\r\n    \"twitterUserName\": \"Slim\",\r\n    \"description\": \"propietario de Claro\",\r\n    \"occupation\": \"Empresario\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/portfolio/update/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"portfolio",
+						"update",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-by-id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/portfolio/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"portfolio",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "github",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
