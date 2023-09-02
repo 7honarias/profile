@@ -2,7 +2,7 @@
 
 Este es un proyecto de Spring Boot desarrollado en Java 11.
 
-encontraras el front de esta aplicacion en el repo -> 
+encontraras el front de esta aplicacion en el repo -> https://github.com/7honarias/front-profile
 
 ## Requisitos Previos
 
