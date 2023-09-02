@@ -69,3 +69,7 @@ el proyecto cuenta con los sigientes endpoints
 ```
       
       
+#Notas
+implemente la api de github para traer el el listado de repositorios publicos que tiene un usuario se debe solicitar el token aqui https://github.com/settings/tokens
+
+documentacion https://docs.github.com/es/rest?apiVersion=2022-11-28

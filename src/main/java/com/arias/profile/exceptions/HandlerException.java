@@ -18,11 +18,11 @@ import java.util.stream.Collectors;
 public class HandlerException {
 
     @ExceptionHandler(value = {BusinessRuleException.class})
-    @ResponseStatus(HttpStatus.BAD_REQUEST)
+    @ResponseStatus(HttpStatus.OK)
     protected ResponseEntity<GeneralResponseDTO<Object>> handleBusinessRuleExceptions(
             BusinessRuleException ex) {
         log.error(ex.getMessage(), ex);
-        return ResponseEntity.status(HttpStatus.BAD_REQUEST)
+        return ResponseEntity.status(HttpStatus.OK)
                 .body(GeneralResponseDTO.builder()
                         .code(-1)
                         .message("no podemos procesar tu solicitud en este momento")
